@@ -1,0 +1,105 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+             AQUA.LESS
+-----------------------------------------*/
+
+@line-height:32px;
+
+.icon {
+    line-height:@line-height;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.aq-answer-incorrect {
+    color:@wrong;
+}
+
+.aq-answer-correct {
+    color:@right;
+}
+
+.aq-final-panel {
+    display:none;
+    text-align:center;
+    line-height:70px;
+    font-weight:bold;
+
+    h3{
+        font-size:40px;
+        color:@dark-color;
+    }
+    .aq-final-score {
+        color:@alpha-color;
+        font-size:36px;
+
+    }
+}
+
+.aq-selectable {
+
+    &.aq-text {}
+
+    &.aq-box {
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background-color: #fff;
+        -webkit-box-shadow: inset -4px -5px 5px 0 rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset -4px -5px 5px 0 rgba(0, 0, 0, 0.45);
+        box-shadow: inset -4px -5px 5px 0 rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+        margin-bottom:10px;
+        height:40px;
+        line-height: 40px;
+
+        h4, p {
+
+            line-height: 40px;
+            @media @SM {
+                font-size: 18px;
+            }
+            @media @XS {
+                font-size: 16px;
+            }
+            @media @XXS {
+                font-size: 12px;
+            }
+        }
+
+        &.correct {
+
+            background-color: #079944;
+
+            h4 {
+                background-color: #079944;
+            }
+            p {
+                background-color: #079944;
+                color: white;
+            }
+        }
+        &.selected {
+            background-color: @alpha-color !important;
+            color: #fff;
+        }
+        &.highlight {
+            background-color: @alpha-color !important;
+            color: #fff;
+        }
+        &:hover {
+            background-color: @alpha-color !important;
+            color: #fff;
+        }
+
+        &.empty {
+            opacity: 0.4;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}

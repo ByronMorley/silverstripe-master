@@ -1,0 +1,53 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+              LOGIN.LESS
+-----------------------------------------*/
+
+#login-form-container {
+
+    background-color:@light-grey;
+
+    @media @XL, @LG, @MD, @SM {
+        width:500px;
+        position:absolute;
+        left:50%;
+        margin-left:-250px;
+        top:20%;
+    }
+
+    .atebol-colorgraph {
+        height:5px;
+    }
+    fieldset .field label {
+        width:100px;
+    }
+    fieldset .field input, fieldset .field select {
+        width: ~"calc(100% - 120px)";
+    }
+    .body {
+        padding: 10px;
+    }
+
+    #MemberLoginForm_LoginForm_Remember_Holder {
+
+        label {
+            width: auto;
+            float: right;
+        }
+        input {
+            width: auto;
+            float: right;
+        }
+    }
+    #MemberLoginForm_LoginForm_action_dologin {
+        float:right;
+        padding:10px 40px;
+        margin-bottom:20px;
+    }
+    #ForgotPassword {
+        float:right;
+        clear:both;
+        margin:0;
+    }
+}

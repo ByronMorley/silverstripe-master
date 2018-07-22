@@ -1,0 +1,101 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+              BUTTON.LESS
+-----------------------------------------*/
+
+button, input[type="submit"] {
+
+    background-color: @zeta-color;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid @zeta-color;
+    line-height: 20px;
+
+    &.inactive {
+        background-color: #aaa;
+        color: #fff;
+        border: 1px solid #aaa;
+
+        &:hover {
+            background-color: #aaa;
+            color: #fff;
+            border: 1px solid #aaa;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    &:last-child {
+        margin-right: 5px;
+    }
+
+    .text {
+        font-size: 14px;
+        float: left;
+    }
+
+    i {
+        float: left;
+        color: #fff;
+        &.with-text {
+            padding-left: 10px;
+        }
+    }
+
+    .fa {
+        font-size: 16px;
+    }
+
+    &.enter-button {
+
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin: 5px;
+
+        i {
+            text-align: center;
+            display: block;
+            line-height: 30px;
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: @zeta-color;
+        i {
+            color: @zeta-color;
+        }
+    }
+}
+
+.button-rack {
+    overflow: hidden;
+    & > li {
+        margin: 0 5px 0 0;
+        float: left;
+        button {
+            margin: 5px 0;
+        }
+    }
+}
+#create-contract,#attach-file {
+    button {
+        margin-right:5px;
+    }
+}
+
+#flag-creator {
+    &.active {
+        button {
+            background-color:@red;
+        }
+
+    }
+}

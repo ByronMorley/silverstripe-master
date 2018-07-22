@@ -1,0 +1,36 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+          MENU EXTENSION.LESS
+-----------------------------------------*/
+
+.ext-menu {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: solid 1px #63267D;
+    border-bottom: solid 1px #7D4998;
+
+    & > li {
+        & > a {
+            color: @light-color;
+            display: block;
+            height: 40px;
+            width: 100%;
+            font-size: 18px;
+            line-height: 40px;
+            padding-left: 10px;
+            font-family: @font-reg;
+            text-decoration: none;
+            cursor: pointer;
+            border-top: solid 1px #7D4998;
+            border-bottom: solid 1px #63267D;
+            transition: all ease 0.75s;
+
+            &:hover, &.current {
+                background-color: #63267D;
+            }
+        }
+    }
+}

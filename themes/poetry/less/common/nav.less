@@ -1,0 +1,216 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                NAV.LESS
+-----------------------------------------*/
+
+/***********************
+     COLOR SCHEME
+ ************************/
+
+@nav-alpha-color: #252525;
+@nav-beta-color: #fff;
+@nav-gamma-color: #C3C3C3;
+@nav-delta-color: #5A5A5A;
+@nav-epsilon-color: #ECECEC;
+
+/***********************
+        GENERAL
+ ************************/
+
+@line-height: 30px;
+@drop-down-background-color: @nav-beta-color;
+@text-color: @nav-alpha-color;
+@background-color: @nav-beta-color;
+@text-color-hover: @nav-beta-color;
+@background-color-hover: @nav-alpha-color;
+
+/***********************
+       DESKTOP
+ ************************/
+
+@grandparent-border-color: @nav-gamma-color;
+@grandparent-border-color-hover: @nav-delta-color;
+
+@grandparent-text-color: @nav-alpha-color;
+@grandparent-background-color: @nav-beta-color;
+@grandparent-text-color-hover: @nav-beta-color;
+@grandparent-background-color-hover: @nav-alpha-color;
+
+@parent-text-color: @nav-alpha-color;
+@parent-background-color: @nav-beta-color;
+@parent-text-color-hover: @nav-beta-color;
+@parent-background-color-hover: @nav-alpha-color;
+
+/*--UNUSED--*/
+@child-text-color: @nav-alpha-color;
+@child-background-color: @nav-beta-color;
+@child-text-color-hover: @nav-alpha-color;
+@child-background-color-hover: @nav-beta-color;
+
+/***********************
+       MOBILE
+ ************************/
+
+@parent-text-color-mobile: @nav-alpha-color;
+@parent-background-color-mobile: @nav-epsilon-color;
+@parent-text-color-hover-mobile: @nav-beta-color;
+@parent-background-color-hover-mobile: @nav-alpha-color;
+
+
+
+nav {
+
+    a {
+        color: @text-color;
+        background-color: @background-color;
+        text-align: center;
+
+        &:hover {
+            color: @text-color-hover;
+            background-color: @background-color-hover;
+            text-decoration: none;
+            text-underline: none;
+        }
+        &.current {
+            color: @text-color-hover;
+            background-color: @background-color-hover;
+            border-bottom: 10px solid @grandparent-border-color-hover;
+        }
+    }
+
+    li {
+        a {
+            padding: 0 10px;
+            line-height: @line-height;
+            cursor: pointer;
+            display: block;
+        }
+
+        i {
+            margin-left: 5px;
+        }
+    }
+
+    /*--Desktop--*/
+    @media @XL, @LG, @MD, @SM {
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: @line-height;
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .mobile-sub-menu-option {
+            display: none;
+        }
+
+        & > ul {
+
+            & > li {
+
+                float: left;
+                position: relative;
+                & > a {
+
+                    border-bottom: 10px solid @grandparent-border-color;
+                    color: @grandparent-text-color;
+                    background-color: @grandparent-background-color;
+
+                    &:hover {
+                        border-bottom: 10px solid @grandparent-border-color-hover;
+                        transition: ease all 0.5s;
+                        color: @grandparent-text-color-hover;
+                        background-color: @grandparent-background-color-hover;
+                    }
+                    i.glyphicon, i.fa {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    & > ul {
+                        display: block;
+                        opacity: 1;
+                    }
+                }
+
+                & > ul {
+                    z-index:101;
+                    position: absolute;
+                    border-bottom: 10px solid @grandparent-border-color-hover;
+                    background-color: @drop-down-background-color;
+                    min-width: 100px;
+
+                    display: none;
+                    opacity: 0;
+
+                    & > li {
+                        position: relative;
+
+                        & > a {
+                            color: @parent-text-color;
+                            background-color: @parent-background-color;
+
+                            &:hover {
+                                color: @parent-text-color-hover;
+                                background-color: @parent-background-color-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--Mobile--*/
+    @media @XS, @XXS {
+
+        width: 100%;
+        height: auto;
+
+        .menu-toggle {
+            text-align: center;
+            width: 100%;
+            font-size: 30px;
+            line-height: @line-height;
+            cursor: pointer;
+        }
+
+        & > ul {
+            overflow: hidden;
+            display: none;
+
+            & > li {
+
+                & > a {
+                    position: relative;
+                    i.fa {
+                        position: absolute;
+                        right: 20px;
+                        line-height: @line-height;
+                    }
+                }
+
+                & > ul {
+                    display: none;
+                    & > li {
+                        & > a {
+                            color: @parent-text-color-mobile;
+                            background-color: @parent-background-color-mobile;
+
+                            &:hover {
+                                color: @parent-text-color-hover-mobile;
+                                background-color: @parent-background-color-hover-mobile;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,60 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+      HEADER NAVIGATION MODULE.LESS
+-----------------------------------------*/
+
+#react-header-navigation {
+
+    position: relative;
+    z-index: 101;
+
+    nav {
+        @media @XS, @XXS {
+            li {
+                width: 100%;
+                clear: both;
+                a{
+                    display:block;
+                    padding:5px 0;
+                }
+            }
+        }
+        .nav-root {
+
+            @media @XS, @XXS {
+                border-top:solid 1px #ddd;
+                background-color: @config-header-color;
+                float: none;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform 0.2s ease-in-out;
+            }
+            &.open {
+                transform: scaleY(1) !important;
+            }
+        }
+    }
+
+    .menu-toggle {
+
+        @media @XL, @LG, @MD, @SM {
+            display: none;
+        }
+
+        height: @config-header-height;
+        width: 100%;
+        display: block;
+
+        line-height: @config-header-height;
+        padding: 0 15px;
+        font-size: 30px;
+        cursor: pointer;
+        color: @light-color;
+
+        &:hover {
+            color: @beta-color;
+        }
+    }
+}
+

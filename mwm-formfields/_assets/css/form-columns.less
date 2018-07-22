@@ -1,0 +1,18 @@
+@import "../../../bower_components/bootstrap/less/variables";
+@import "../../../bower_components/bootstrap/less/mixins";
+
+@import "../../../bower_components/bootstrap/less/grid";
+
+.CompositeField.composite {
+	box-sizing: border-box;
+}
+
+[class^='col-'],[class*=' col-']{
+	.ss-uploadfield .middleColumn {
+		min-width: 0;
+	}
+
+	.ui-accordion-header > a {
+		margin-left:20px;
+	}
+}

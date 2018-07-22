@@ -1,0 +1,96 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                PAGE MENU.LESS
+-----------------------------------------*/
+
+@circle-height: 120px;
+@outer-circle-height: 124px;
+@half-width: @outer-circle-height / 2;
+
+@menu-color:#FF8740;
+
+.page-menu {
+    margin-bottom:20px;
+    width: 100%;
+    background-color: @menu-color;
+    padding: 20px 0px;
+    ul {
+        overflow: hidden;
+        li {
+            margin-bottom:20px;
+            @media @XXS {
+                &.col-6 {
+                    width: 50%;
+                }
+            }
+
+            float: left;
+            a {
+
+                cursor:pointer;
+                &:hover {
+                    .circle {
+                        transition: ease all 0.5s;
+                        background-color:rgba(0,0,0,0);
+                    }
+                }
+
+                .text {
+                    padding: 6px;
+                    span {
+                        text-align: center;
+                        color: @light-grey;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .circle {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: @circle-height;
+        height: @circle-height;
+        background: #FF995C;
+        -moz-border-radius: @circle-height / 2;
+        -webkit-border-radius: @circle-height / 2;
+        border-radius: @circle-height / 2;
+
+        i {
+            width: @circle-height;
+            height: @circle-height;
+            line-height: @circle-height;
+            text-align: center;
+            font-size: 48px;
+            color: @light-grey;
+
+        }
+    }
+    .c-panel-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: @outer-circle-height;
+        .c-panel {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -@half-width;
+        }
+    }
+
+    .outer-circle {
+
+        position: relative;
+        width: @outer-circle-height;
+        height: @outer-circle-height;
+        background: #FFA975;
+        -moz-border-radius: @outer-circle-height / 2;
+        -webkit-border-radius: @outer-circle-height / 2;
+        border-radius: @outer-circle-height / 2;
+
+    }
+}

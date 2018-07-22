@@ -1,0 +1,81 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+             ORDERLIST.LESS
+-----------------------------------------*/
+
+.drag-and-drop {
+
+    margin: 0 !important;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+
+    ul, li, p, h4 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    & > li {
+
+        float: left;
+
+        &:first-child {
+            width: 10%;
+        }
+        &:nth-child(2) {
+            width: 90%;
+        }
+
+        & > ul {
+
+            li {
+                margin-bottom: 10px;
+            }
+            & > li {
+                height: 40px;
+                h4, p {
+                    line-height: 40px;
+
+                    @media @SM {
+                        font-size: 18px;
+                    }
+                    @media @XS {
+                        font-size: 16px;
+                    }
+                    @media @XXS {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .order {
+
+            h4 {
+                color: @alpha-color;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.aq-order-list {
+
+    .aq-selectable {
+
+        position: relative;
+
+        .aq-icons {
+            font-size: 40px;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+    }
+}

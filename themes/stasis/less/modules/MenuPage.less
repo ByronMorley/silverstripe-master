@@ -1,0 +1,279 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+         MENU PAGE.LESS
+-----------------------------------------*/
+
+@default-menu-color: @alpha-color;
+
+/************************
+        THEMES
+************************ */
+
+.menu-page {
+        ul {
+            li {
+                a {
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+
+                    .menu-title {
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        font-weight:700;
+                        font-size: 36px;
+                        color: #fff;
+                }
+
+                    i.fa {
+                         position: absolute;
+                         bottom: 10px;
+                         left: 10px;
+                         color: #fff;
+                         font-size: 64px;
+                     }
+                    transition: all 1s ease-in-out;
+
+
+                    &:hover {
+                        .triangle-bottomright {
+                            transition: all .2s ease-in-out;
+                            border-bottom: 300px solid rgba(0, 0, 0, 0.3);
+                            border-left: 300px solid transparent;
+                        }
+                        .menu-title {
+                            font-size: 42px;
+                        }
+                    }
+                }
+            }
+        }
+
+}
+
+/************************
+        SIZES
+************************/
+
+.menupage .main .container {
+
+    @media @XXS, @XS {
+        padding: 0 5px;
+    }
+    @media @SM, @MD, @LG, @XL {
+        padding: 0;
+    }
+}
+
+.menu-page {
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    width: 100%;
+    overflow: hidden;
+
+    & > ul {
+
+        /*--- General ---*/
+
+        & > li {
+
+            float: left;
+            height: 180px;
+
+            & > a {
+                background-color: @default-menu-color;
+                &:hover {
+
+                }
+            }
+        }
+
+        /*--- Menu Layouts ---*/
+
+        &.menu-5 {
+
+            & > li {
+                @media @XL {
+                    width: 20%;
+                    padding: 0 5px 10px 5px;
+                    @nth: 5;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+5) {
+                        padding-right: 0px;
+                    }
+                }
+                @media @LG {
+                    width: 25%;
+                    padding: 0 5px 10px 5px;
+
+                    @nth: 4;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+4) {
+                        padding-right: 0px;
+                    }
+
+                }
+                @media @MD {
+                    width: 33%;
+                    padding: 0 5px 10px 5px;
+
+
+                    @nth: 3;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0;
+                    }
+
+                    &:nth-child(@{nth}n+3) {
+                        padding-right: 0;
+                        width: 34%;
+                    }
+                }
+                @media @SM {
+                    width: 50%;
+                    padding: 0 5px 10px 5px;
+
+                    @nth: 2;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+2) {
+                        padding-right: 0px;
+                    }
+                }
+                @media @XS, @XXS {
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        &.menu-4 {
+            & > li {
+                @media @LG, @XL {
+                    width: 25%;
+                    padding: 0 5px 10px 5px;
+
+                    @nth: 4;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+4) {
+                        padding-right: 0px;
+                    }
+                }
+                @media @MD {
+                    width: 33%;
+                    padding: 0 5px 10px 5px;
+
+
+                    @nth: 3;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0;
+                    }
+
+                    &:nth-child(@{nth}n+3) {
+                        padding-right: 0;
+                        width: 34%;
+                    }
+                }
+                @media @SM {
+                    width: 50%;
+                    padding: 0 5px 10px 5px;
+
+                    @nth: 2;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+2) {
+                        padding-right: 0px;
+                    }
+                }
+                @media @XS, @XXS {
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &.menu-3 {
+
+            & > li {
+                @media @LG, @XL {
+                    width: 33%;
+                    padding: 0 5px 10px 5px;
+
+
+                    @nth: 3;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0;
+                    }
+
+                    &:nth-child(@{nth}n+3) {
+                        padding-right: 0;
+                        width: 34%;
+                    }
+                }
+                @media @MD, @SM {
+                    width: 50%;
+                    padding: 0 5px 10px 5px;
+
+                    @nth: 2;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+2) {
+                        padding-right: 0px;
+                    }
+                }
+                @media @XS, @XXS {
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &.menu-2 {
+
+            & > li {
+                @media @XL, @LG, @MD {
+                    width: 50%;
+                    padding: 0 5px 10px 5px;
+
+                    @nth: 2;
+                    &:nth-child(@{nth}n+1) {
+                        padding-left: 0px;
+                    }
+
+                    &:nth-child(@{nth}n+2) {
+                        padding-right: 0px;
+                    }
+                }
+                @media @XS, @XXS, @SM {
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &.menu-1 {
+            & > li {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

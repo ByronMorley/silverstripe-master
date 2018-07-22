@@ -1,0 +1,83 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            TABLE.LESS
+-----------------------------------------*/
+
+@border-color: @light-grey;
+@even-wash: #F6F6F6;
+@even-wash-color: @light-grey;
+@row-hover: #E4E4E2;
+@font-color: @mid-grey;
+
+.table {
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    height: 40px;
+    overflow: hidden;
+
+    li {
+      color: @font-color;
+      float: left;
+      height: 100%;
+      line-height: 40px;
+      text-align: center;
+      &.variable {
+        text-align: left;
+        padding-left: 5px;
+      }
+
+    }
+  }
+  .table-header {
+    border-top: @border-color 1px solid;
+    border-bottom: @border-color 1px solid;
+
+    .row {
+      height: 40px;
+
+      li {
+        color: #333;
+      }
+    }
+  }
+
+  .table-body {
+
+    .table-item {
+      &:nth-child(even) {
+        background-color: @even-wash;
+      }
+
+      li {
+        border-right: @border-color 1px solid;
+
+        &:first-child {
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.selectable {
+    .table-item {
+      cursor: pointer;
+
+      &:hover {
+
+        background-color: @row-hover;
+        ul, li, span .text {
+          color: #000;
+          border-color: @row-hover;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+               ASIDE.LESS
+-----------------------------------------*/
+
+aside {
+
+
+    @media @XS, @XXS {
+        width:100%;
+        margin:0;
+    }
+
+    .aside-item {
+        margin-bottom:10px;
+    }
+
+
+    float:left;
+    width:~"calc(30% - 10px)";
+    margin-left:10px;
+
+    ul.aside-menu {
+
+        padding:0;
+
+        &>li {
+            color:@alpha-color;
+            border-bottom:1px solid @light-grey;
+
+            &:last-child {
+                border:none;
+                a{
+                    padding-bottom:0px;
+                }
+            }
+            a{
+                font-size:16px;
+                padding-top:5px;
+                display:block;
+                // text-align: left;
+                padding-bottom:10px;
+                &:hover {
+                    border:none;
+                }
+            }
+        }
+    }
+}

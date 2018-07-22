@@ -1,0 +1,5 @@
+
+add pdf_dowloader to link class
+
+add to Head
+<meta id="pdf-site-info" root="$SiteConfig.Title" page="$Title"/>

@@ -1,0 +1,90 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+             THEMES.LESS
+-----------------------------------------*/
+
+.theme-banner {
+
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    .menu-title {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-family: domotika_trialbold;
+        font-size: 72px;
+        line-height: 100px;
+        color: #fff;
+
+        @media @SM, @XS, @XXS {
+            font-size: 60px;
+        }
+    }
+
+    i.fa {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #fff;
+        font-size: 160px;
+
+        @media @SM, @XS, @XXS {
+            font-size: 100px;
+        }
+
+        &.dragon {
+            background: url("../assets/icons/dragon.png");
+            background-size: 200px 200px;
+            width: 200px;
+            height: 200px;
+            left: 0;
+            bottom: 0;
+
+            @media @SM, @XS, @XXS {
+                background-size: 100px 100px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    }
+    .triangle-bottomright {
+        transition: all .2s ease-in-out;
+        border-bottom: 700px solid rgba(0, 0, 0, 0.3);
+        border-left: 700px solid transparent;
+
+        @media @SM, @XS {
+            border-bottom: 400px solid rgba(0, 0, 0, 0.3);
+            border-left: 400px solid transparent;
+        }
+        @media @XXS {
+            border-bottom: 200px solid rgba(0, 0, 0, 0.3);
+            border-left: 200px solid transparent;
+        }
+    }
+}
+
+
+.poem-panel {
+
+
+    .header {
+        height:50px;
+    }
+
+    .main {
+        border:2px solid @alpha-color
+    }
+    .author {
+
+        color:@mid-grey;
+        span {
+            display:inline-block;
+            color:@dark-color;
+        }
+    }
+}

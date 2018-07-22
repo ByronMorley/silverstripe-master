@@ -1,0 +1,7 @@
+## code-blocks controller routes
+Name: code-blocks
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'codeblock//$Action/$ID/$Name': 'CodeBlockController'

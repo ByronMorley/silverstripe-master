@@ -1,0 +1,77 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                MAIN.LESS
+-----------------------------------------*/
+
+body {
+    background-color:#eee;
+}
+
+.container {
+    height:100%;
+}
+
+
+main {
+    @media @XS, @XXS {
+        width:100%;
+        margin:0;
+    }
+    float:left;
+    width:70%;
+
+    .title {
+
+    }
+
+    .sub.title {
+
+        text-align:left;
+        font-size:40px;
+        line-height:40px;
+        margin-bottom:0;
+        float:left;
+        padding-right:0;
+    }
+}
+
+h1.title, h6.title {
+
+    text-align: left;
+    padding-right:0;
+
+    line-height: 40px;
+    margin: 0 0 10px 0;
+    color: @alpha-color;
+    font-weight:700;
+
+    font-size: 30px;
+
+    @media @XXS, @XS, @SM {
+        font-size: 26px;
+    }
+
+}
+
+.custom-font-test {
+    h1 {
+        font-weight:800;
+    }
+    h2 {
+        font-weight:800;
+    }
+    h3 {
+        font-weight:800;
+    }
+    h4 {
+        font-weight:800;
+    }
+    h5 {
+        font-weight:800;
+    }
+    h6 {
+        font-weight:800;
+    }
+}
+

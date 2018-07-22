@@ -1,0 +1,88 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            POEM.LESS
+-----------------------------------------*/
+
+.poem {
+    article {
+        padding: 0 0 100px 0;
+    }
+    .panel {
+        &.main {
+            margin-bottom: 0px;
+        }
+
+        .title {
+            text-align: center;
+        }
+        .content {
+            color:#0f0f0f;
+        }
+    }
+
+    .panel-list {
+        & > li {
+
+            &:first-child {
+                .content {
+                    display: block;
+                }
+            }
+            .content {
+                display: none;
+            }
+            .header {
+                position:relative;
+                cursor:pointer;
+                &:hover{
+                    filter: brightness(85%);
+                }
+
+            }
+            .arrow-toggle {
+                position:absolute;
+                left:10px;
+                top:0;
+                line-height:50px;
+                color:@light-color;
+                font-size:26px;
+
+            }
+            .fa-chevron-down {
+                display:none;
+            }
+            .fa-chevron-up {
+                display:block;
+            }
+            &.open {
+                .fa-chevron-down {
+
+                    display:block;
+                }
+                .fa-chevron-up {
+                    display:none;
+                }
+
+                .header {
+                    filter: brightness(85%);
+                }
+                .main{
+                }
+            }
+        }
+    }
+}
+
+.poem-panel {
+
+    &.poem-text {
+        .typography {
+            p {
+                margin-bottom:2px;
+                text-align: center;
+            }
+        }
+    }
+
+}

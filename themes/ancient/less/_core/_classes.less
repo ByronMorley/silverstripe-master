@@ -1,0 +1,159 @@
+@import "_config.less";
+
+/*-----------------------------------------
+                CLASSES.LESS
+-----------------------------------------*/
+
+.no-display {
+    display:none;
+}
+
+.nopadding {
+    padding: 0;
+}
+a:hover, a:focus {
+
+    text-decoration: none;
+}
+
+.atebol-colorgraph {
+
+    position:relative;
+    width:100%;
+
+    border-top: 0;
+    background: @alpha-color;
+    background-image: -webkit-linear-gradient(left, @beta-color, @beta-color 20%, @gamma-color 20%, @gamma-color 40%, @delta-color 40%, @delta-color 60%, @epsilon-color 60%, @epsilon-color 80%, @zeta-color 80%, @zeta-color);
+    background-image: -o-linear-gradient(left, @beta-color, @beta-color 20%, @gamma-color 20%, @gamma-color 40%, @delta-color 40%, @delta-color 60%, @epsilon-color 60%, @epsilon-color 80%, @zeta-color 80%, @zeta-color);
+    background-image: linear-gradient(to right, @beta-color, @beta-color 20%, @gamma-color 20%, @gamma-color 40%, @delta-color 40%, @delta-color 60%, @epsilon-color 60%, @epsilon-color 80%, @zeta-color 80%, @zeta-color);
+    //border-radius: 5px;
+    height: 10px;
+
+    &.abs {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &.large {
+        height: 10px;
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    &.small {
+        // border-radius: 5px;
+        height: 5px;
+        width: 100px;
+    }
+    &.fancy {
+        @media @XS, @XXS {
+
+            display: none;
+        }
+    }
+}
+
+.anim-colorgraph {
+
+    width:200px;
+    overflow: hidden;
+
+    &>li {
+
+        width:16.67%;
+        height:7px;
+        display:block;
+        float:left;
+        margin:0;
+        padding:0;
+
+        &:nth-child(1){
+            background-color: @alpha-color;
+        }
+        &:nth-child(2){
+            background-color: @beta-color;
+        }
+        &:nth-child(3){
+            background-color: @gamma-color;
+        }
+        &:nth-child(4){
+            background-color: @delta-color;
+        }
+        &:nth-child(5){
+            background-color: @epsilon-color;
+        }
+        &:nth-child(6){
+            background-color: @zeta-color;
+        }
+    }
+}
+
+.button {
+    color:@light-color !important;
+    background-color: @alpha-color;
+    padding:10px 20px;
+    border: 1px solid @alpha-color;
+    transition: 0.5s ease all;
+
+    &:hover {
+        border: 1px solid @alpha-color !important;
+        background-color: @light-color;
+        color:@alpha-color !important;
+
+    }
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 14px 101px -58px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 14px 101px -58px rgba(0,0,0,1);
+    box-shadow: 0px 14px 101px -58px rgba(0,0,0,1);
+}
+.rel {
+    position:relative;
+}
+.abs {
+    position:absolute;
+}
+
+.darken-10 {
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%);
+}
+.darken-20 {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+}
+.darken-30 {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}
+.darken-40 {
+    -webkit-filter: brightness(60%);
+    filter: brightness(60%);
+}
+.darken-50 {
+    -webkit-filter: brightness(50%);
+     filter: brightness(50%);
+ }
+.darken-60 {
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+}
+.darken-70 {
+    -webkit-filter: brightness(30%);
+    filter: brightness(30%);
+}
+.darken-80 {
+    -webkit-filter: brightness(20%);
+    filter: brightness(20%);
+}
+.darken-90 {
+    -webkit-filter:brightness(10%);
+    filter: brightness(10%);
+}
+.darken-100 {
+    -webkit-filter:brightness(0%);
+    filter: brightness(0%);
+}
+

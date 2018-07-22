@@ -1,0 +1,245 @@
+[15-Jan-2018 18:03:21] Warning at \framework\core\manifest\ClassLoader.php line 77: require_once(D:\Business\Atebol\Projects\Silverstripe_template/mysite/code/Pages/Page.php): failed to open stream: No such file or directory (http://localhost/Silverstripe_template/)
+[15-Jan-2018 18:03:51] Warning at \framework\core\manifest\ClassLoader.php line 77: require_once(D:\Business\Atebol\Projects\Silverstripe_template/mysite/code/Pages/Page.php): failed to open stream: No such file or directory (http://localhost/Silverstripe_template/)
+[15-Jan-2018 18:03:52] Warning at \framework\core\manifest\ClassLoader.php line 77: require_once(D:\Business\Atebol\Projects\Silverstripe_template/mysite/code/Pages/Page.php): failed to open stream: No such file or directory (http://localhost/Silverstripe_template/)
+[15-Jan-2018 19:02:06] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/)
+[15-Jan-2018 19:02:07] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/users/lock)
+[15-Jan-2018 19:56:28] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/)
+[15-Jan-2018 19:56:29] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/users/lock)
+[15-Jan-2018 19:58:01] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/)
+[15-Jan-2018 19:58:02] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/users/lock)
+[15-Jan-2018 20:04:26] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/)
+[15-Jan-2018 20:04:27] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: SSL certificate problem: unable to get local issuer certificate (http://localhost/Silverstripe_template/users/lock)
+[16-Jan-2018 08:56:46] Warning at \framework\core\manifest\ClassLoader.php line 77: require_once(D:\Business\Atebol\Projects\Silverstripe_template/mysite/code/Pages/Model/ContactPage.php): failed to open stream: No such file or directory (http://localhost/Silverstripe_template/admin/pages)
+[30-Jan-2018 15:54:15] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'render' does not exist on 'Page', or the method is not public. (http://localhost/Silverstripe_template/contact-us/)
+[30-Jan-2018 15:54:59] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'render' does not exist on 'Page', or the method is not public. (http://localhost/Silverstripe_template/)
+[30-Jan-2018 15:56:19] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'render' does not exist on 'ContactPage', or the method is not public. (http://localhost/Silverstripe_template/contact-us/)
+[30-Apr-2018 15:40:10] Error at \mailgunner\src\Mailer.php line 95: Mailgun error: The parameters passed to the API were invalid. Check your inputs! 'from' parameter is missing (http://localhost/Silverstripe_template/dev/tasks/TestEmailTask)
+[30-Apr-2018 16:30:14] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "SiteConfig"."ClassName", "SiteConfig"."LastEdited", "SiteConfig"."Created", "SiteConfig"."Title", "SiteConfig"."Tagline", "SiteConfig"."Theme", "SiteConfig"."CanViewType", "SiteConfig"."CanEditType", "SiteConfig"."CanCreateTopLevelType", "SiteConfig"."Locale", "SiteConfig"."ModernoLinkColor", "SiteConfig"."ModernoLogoBkgColor", "SiteConfig"."ModernoHighlightColor", "SiteConfig"."ModernoProfileLinkColor", "SiteConfig"."ModernoApplicationName", "SiteConfig"."ModernoApplicationLink", "SiteConfig"."ModernoLogoImageWidth", "SiteConfig"."ModernoLogoImageHeight", "SiteConfig"."ModernoLogoImageResize", "SiteConfig"."ModernoLoadingImageWidth", "SiteConfig"."ModernoLoadingImageHeight", "SiteConfig"."ModernoLoadingImageResize", "SiteConfig"."ModernoSupportRetina", "SiteConfig"."ModernoHideSiteName", "SiteConfig"."ModernoLogoImageID", "SiteConfig"."ModernoLoadingImageID", "SiteConfig"."ID", 
+			CASE WHEN "SiteConfig"."ClassName" IS NOT NULL THEN "SiteConfig"."ClassName"
+			ELSE 'SiteConfig' END AS "RecordClassName"
+
+FROM "SiteConfig"
+
+WHERE ("SiteConfig"."Locale" = ?)
+
+LIMIT 1
+
+Unknown column 'SiteConfig.ModernoLinkColor' in 'field list' (http://localhost/poetry2.0/)
+[17-May-2018 14:02:23] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class building-blocks does not exist (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=3de7afac635ea9808d1e2d3738a7ac2b)
+[04-Jun-2018 20:52:46] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'SaladSlide', the has_many relation from 'ImageBanner' to 'SaladSlide' requires a has_one on 'SaladSlide' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/1/edit?Locale=en_GB)
+[05-Jun-2018 11:40:37] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "SaladBanner"."ClassName", "SaladBanner"."LastEdited", "SaladBanner"."Created", "SaladBanner"."Title", "SaladBanner"."SortOrder", "SaladBanner"."ShowTitle", "SaladBanner"."AutoPlay", "SaladBanner"."Delay", "SaladBanner"."TransitionDuration", "SaladBanner"."Transition", "SaladBanner"."Controls", "SaladBanner"."TackLocation", "SaladBanner"."ID", 
+			CASE WHEN "SaladBanner"."ClassName" IS NOT NULL THEN "SaladBanner"."ClassName"
+			ELSE 'SaladBanner' END AS "RecordClassName"
+
+FROM "SaladBanner"
+
+WHERE ("SaladBanner"."ID" = ?)
+
+ORDER BY "SaladBanner"."SortOrder" ASC
+
+LIMIT 1
+
+Unknown column 'SaladBanner.AutoPlay' in 'field list' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/1/edit?Locale=en_GB)
+[05-Jun-2018 11:40:56] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "SaladBanner"."ClassName", "SaladBanner"."LastEdited", "SaladBanner"."Created", "SaladBanner"."Title", "SaladBanner"."SortOrder", "SaladBanner"."ShowTitle", "SaladBanner"."AutoPlay", "SaladBanner"."Delay", "SaladBanner"."TransitionDuration", "SaladBanner"."Transition", "SaladBanner"."Controls", "SaladBanner"."TackLocation", "SaladBanner"."ID", 
+			CASE WHEN "SaladBanner"."ClassName" IS NOT NULL THEN "SaladBanner"."ClassName"
+			ELSE 'SaladBanner' END AS "RecordClassName"
+
+FROM "SaladBanner"
+
+WHERE ("SaladBanner"."ID" = ?)
+
+ORDER BY "SaladBanner"."SortOrder" ASC
+
+LIMIT 1
+
+Unknown column 'SaladBanner.AutoPlay' in 'field list' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/1/edit?Locale=en_GB)
+[05-Jun-2018 11:46:13] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'SaladSlide', the has_many relation from 'ImageBanner' to 'SaladSlide' requires a has_one on 'SaladSlide' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/1/edit?Locale=en_GB)
+[05-Jun-2018 11:47:13] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'SaladSlide', the has_many relation from 'ImageBanner' to 'SaladSlide' requires a has_one on 'SaladSlide' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/1/edit?Locale=en_GB)
+[05-Jun-2018 11:50:38] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'SaladSlide', the has_many relation from 'ImageBanner' to 'SaladSlide' requires a has_one on 'SaladSlide' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/add-multi-class/ImageBanner/ItemEditForm?Locale=en_GB)
+[05-Jun-2018 11:51:02] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'SaladSlide', the has_many relation from 'ImageBanner' to 'SaladSlide' requires a has_one on 'SaladSlide' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/add-multi-class/ImageBanner/ItemEditForm?Locale=en_GB)
+[05-Jun-2018 12:01:06] Error at \gridfieldextensions\code\GridFieldOrderableRows.php line 132: Uncaught Exception: Couldn't find the sort field 'SortOrder' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/4?Locale=en_GB)
+[05-Jun-2018 12:02:27] Error at \gridfieldextensions\code\GridFieldOrderableRows.php line 132: Uncaught Exception: Couldn't find the sort field 'SortOrder' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/5?Locale=en_GB)
+[05-Jun-2018 12:04:55] Error at \gridfieldextensions\code\GridFieldOrderableRows.php line 132: Uncaught Exception: Couldn't find the sort field 'SortOrder' (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/5?Locale=en_GB)
+[05-Jun-2018 13:44:25] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'fortemplate' does not exist on 'ImageSlide', or the method is not public. (http://localhost/Silverstripe_template/home/sliders/mulitple/)
+[05-Jun-2018 14:17:15] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class QuoteBanner does not exist (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/9/ItemEditForm/field/Slides/add-multi-class/QuoteSlide?Locale=en_GB)
+[05-Jun-2018 14:17:22] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class QuoteBanner does not exist (http://localhost/Silverstripe_template/admin/Banners/SaladBanner/EditForm/field/SaladBanner/item/9/ItemEditForm/field/Slides/add-multi-class/QuoteSlide?Locale=en_GB)
+[08-Jun-2018 14:10:37] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "ActivityGroup"."ClassName", "ActivityGroup"."LastEdited", "ActivityGroup"."Created", "ActivityGroup"."ID", 
+			CASE WHEN "ActivityGroup"."ClassName" IS NOT NULL THEN "ActivityGroup"."ClassName"
+			ELSE 'ActivityGroup' END AS "RecordClassName"
+
+FROM "ActivityGroup"
+
+Table 'ss_poet.activitygroup' doesn't exist (http://localhost/Silverstripe_template/admin/pages/edit/EditForm/30/field/Sections/add-multi-class/SectionActivityBlock?Locale=en_GB)
+[08-Jun-2018 14:37:54] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'Activity', the has_many relation from 'ActivityGroup' to 'Activity' requires a has_one on 'Activity' (http://localhost/Silverstripe_template/admin/activities/ActivityGroup/EditForm/field/ActivityGroup/item/new/ItemEditForm?Locale=en_GB)
+[08-Jun-2018 14:38:04] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'Activity', the has_many relation from 'ActivityGroup' to 'Activity' requires a has_one on 'Activity' (http://localhost/Silverstripe_template/admin/activities/ActivityGroup/EditForm/field/ActivityGroup/item/new/ItemEditForm?Locale=en_GB)
+[08-Jun-2018 14:51:13] Error at \gridfieldextensions\code\GridFieldOrderableRows.php line 132: Uncaught Exception: Couldn't find the sort field 'SortOrder' (http://localhost/Silverstripe_template/admin/activities/ActivityGroup/EditForm/field/ActivityGroup/item/4/ItemEditForm/field/Activities/item/3?Locale=en_GB)
+[08-Jun-2018 15:17:58] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'fortemplate' does not exist on 'ActivityGroup', or the method is not public. (http://localhost/Silverstripe_template/home/activities/test-page/)
+[09-Jun-2018 11:46:50] Error at \framework\view\SSTemplateParser.php line 4732: Uncaught SSTemplateParseException: Parse error in template on line 1. Error was: Unexpected problem parsing template (http://localhost/Silverstripe_template/home/activities/test-page/)
+[10-Jun-2018 14:37:23] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+ALTER TABLE "ActivityGroup" ADD "KeepScore" tinyint(1) unsigned not null default '0',
+ADD "ScoreMulitplier" int(11) not null default '0',
+ADD "ShowActivityCount" tinyint(1) unsigned not null default '0',
+ADD "ShowNavButtons" tinyint(1) unsigned not null default '0',
+ADD "ShowFinalScreen" tinyint(1) unsigned not null default '0',
+ADD "ShowIntroductionScreen" tinyint(1) unsigned not null default '0'
+
+Duplicate column name 'KeepScore' (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=ce5cd22a223f99e94905374ed7cc734a)
+[10-Jun-2018 14:37:50] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "ActivityGroup"."ClassName", "ActivityGroup"."LastEdited", "ActivityGroup"."Created", "ActivityGroup"."Title", "ActivityGroup"."Modal", "ActivityGroup"."KeepScore", "ActivityGroup"."ScoreMulitplier", "ActivityGroup"."ShowActivityCount", "ActivityGroup"."ShowNavButtons", "ActivityGroup"."ShowFinalScreen", "ActivityGroup"."ShowIntroductionScreen", "ActivityGroup"."ID", 
+			CASE WHEN "ActivityGroup"."ClassName" IS NOT NULL THEN "ActivityGroup"."ClassName"
+			ELSE 'ActivityGroup' END AS "RecordClassName"
+
+FROM "ActivityGroup"
+
+WHERE ("ActivityGroup"."ID" = ?)
+
+LIMIT 1
+
+Unknown column 'ActivityGroup.ScoreMulitplier' in 'field list' (http://localhost/Silverstripe_template/admin/activities/ActivityGroup/EditForm/field/ActivityGroup/item/5/edit?Locale=en_GB)
+[10-Jun-2018 14:39:09] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+ALTER TABLE "ActivityGroup" ADD "KeepScore" tinyint(1) unsigned not null default '0',
+ADD "ScoreMultiplier" int(11) not null default '0',
+ADD "ShowActivityCount" tinyint(1) unsigned not null default '0',
+ADD "ShowNavButtons" tinyint(1) unsigned not null default '0',
+ADD "ShowFinalScreen" tinyint(1) unsigned not null default '0',
+ADD "ShowIntroductionScreen" tinyint(1) unsigned not null default '0'
+
+Duplicate column name 'KeepScore' (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=27a95f5f339304977a2ace33819c5796)
+[10-Jun-2018 14:57:19] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class Question does not exist (http://localhost/Silverstripe_template/admin/activities/ActivityGroup/EditForm/field/ActivityGroup/item/6?Locale=en_GB)
+[17-Jun-2018 16:21:24] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'pos' does not exist on 'SectionTextBlock', or the method is not public. (http://localhost/Silverstripe_template/home/blue-peter/presentation-holder/show/9)
+[17-Jun-2018 17:50:12] Error at \framework\view\SSTemplateParser.php line 4093: Uncaught SSTemplateParseException: Parse error in template on line 36. Error was: Malformed closing block tag end_with. Perhaps you have tried to pass an argument to one? (http://localhost/Silverstripe_template/home/blue-peter/presentation-holder/show/9)
+[17-Jun-2018 20:12:57] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'pages' does not exist on 'SectionTextBlock', or the method is not public. (http://localhost/Silverstripe_template/home/blue-peter/presentation-holder/show/15)
+[19-Jun-2018 12:00:22] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'SectionTextBlock', the has_many relation from 'SectionTabBlock' to 'SectionTextBlock' requires a has_one on 'SectionTextBlock' (http://localhost/Silverstripe_template/admin/pages/edit/EditForm/46/field/Sections/add-multi-class/SectionTabBlock/ItemEditForm?Locale=en_GB)
+[19-Jun-2018 12:12:24] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT count(DISTINCT "Section"."ID") AS "Count"
+
+FROM "Section"
+LEFT JOIN "SectionTextBlock" ON "SectionTextBlock"."ID" = "Section"."ID"
+
+WHERE ("SectionTextBlock"."SectionTabBlockID" = ?)
+ AND ("Section"."ClassName" IN (?))
+
+Unknown column 'SectionTextBlock.SectionTabBlockID' in 'where clause' (http://localhost/Silverstripe_template/admin/pages/edit/EditForm/46/field/Sections/item/23?Locale=en_GB)
+[20-Jun-2018 15:33:16] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'parenttitle' does not exist on 'BlockPage', or the method is not public. (http://localhost/Silverstripe_template/home/blue-peter/presentation-holder/show/19)
+[26-Jun-2018 17:07:49] Error at \framework\core\ClassInfo.php line 284: Uncaught ReflectionException: Class TakeOut does not exist (http://localhost/Silverstripe_template/)
+[26-Jun-2018 17:09:14] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class TakeOut does not exist (http://localhost/Silverstripe_template/admin/pages)
+[27-Jun-2018 18:45:56] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "MenuTemplate"."ClassName", "MenuTemplate"."LastEdited", "MenuTemplate"."Created", "MenuTemplate"."Title", "MenuTemplate"."Theme", "MenuTemplate"."Column", "MenuTemplate"."ID", 
+			CASE WHEN "MenuTemplate"."ClassName" IS NOT NULL THEN "MenuTemplate"."ClassName"
+			ELSE 'MenuTemplate' END AS "RecordClassName"
+
+FROM "MenuTemplate"
+
+LIMIT 1
+
+Unknown column 'MenuTemplate.Column' in 'field list' (http://localhost/Silverstripe_template/admin/menu-templates/MenuTemplate/EditForm/field/MenuTemplate/item/1/edit?Locale=en_GB)
+[27-Jun-2018 18:46:00] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "MenuTemplate"."ClassName", "MenuTemplate"."LastEdited", "MenuTemplate"."Created", "MenuTemplate"."Title", "MenuTemplate"."Theme", "MenuTemplate"."Column", "MenuTemplate"."ID", 
+			CASE WHEN "MenuTemplate"."ClassName" IS NOT NULL THEN "MenuTemplate"."ClassName"
+			ELSE 'MenuTemplate' END AS "RecordClassName"
+
+FROM "MenuTemplate"
+
+LIMIT 1
+
+Unknown column 'MenuTemplate.Column' in 'field list' (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=855082bab917e9d7f93ce25b7d63bb29)
+[27-Jun-2018 18:46:03] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "MenuTemplate"."ClassName", "MenuTemplate"."LastEdited", "MenuTemplate"."Created", "MenuTemplate"."Title", "MenuTemplate"."Theme", "MenuTemplate"."Column", "MenuTemplate"."ID", 
+			CASE WHEN "MenuTemplate"."ClassName" IS NOT NULL THEN "MenuTemplate"."ClassName"
+			ELSE 'MenuTemplate' END AS "RecordClassName"
+
+FROM "MenuTemplate"
+
+LIMIT 1
+
+Unknown column 'MenuTemplate.Column' in 'field list' (http://localhost/Silverstripe_template/admin/menu-templates/MenuTemplate/EditForm/field/MenuTemplate/item/1/edit?Locale=en_GB)
+[27-Jun-2018 18:47:10] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "MenuTemplate"."ClassName", "MenuTemplate"."LastEdited", "MenuTemplate"."Created", "MenuTemplate"."Title", "MenuTemplate"."Theme", "MenuTemplate"."Column", "MenuTemplate"."ID", 
+			CASE WHEN "MenuTemplate"."ClassName" IS NOT NULL THEN "MenuTemplate"."ClassName"
+			ELSE 'MenuTemplate' END AS "RecordClassName"
+
+FROM "MenuTemplate"
+
+LIMIT 1
+
+Unknown column 'MenuTemplate.Column' in 'field list' (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=fff37e021607aa5e364a0d61fc0ea691)
+[27-Jun-2018 18:47:58] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "MenuTemplate"."ClassName", "MenuTemplate"."LastEdited", "MenuTemplate"."Created", "MenuTemplate"."Title", "MenuTemplate"."Theme", "MenuTemplate"."Column", "MenuTemplate"."ID", 
+			CASE WHEN "MenuTemplate"."ClassName" IS NOT NULL THEN "MenuTemplate"."ClassName"
+			ELSE 'MenuTemplate' END AS "RecordClassName"
+
+FROM "MenuTemplate"
+
+LIMIT 1
+
+Unknown column 'MenuTemplate.Column' in 'field list' (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=1df2d04a5b07a1e05e95654d44fffacf)
+[27-Jun-2018 18:48:59] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "MenuTemplate"."ClassName", "MenuTemplate"."LastEdited", "MenuTemplate"."Created", "MenuTemplate"."Title", "MenuTemplate"."Theme", "MenuTemplate"."Column", "MenuTemplate"."ID", 
+			CASE WHEN "MenuTemplate"."ClassName" IS NOT NULL THEN "MenuTemplate"."ClassName"
+			ELSE 'MenuTemplate' END AS "RecordClassName"
+
+FROM "MenuTemplate"
+
+LIMIT 1
+
+Unknown column 'MenuTemplate.Column' in 'field list' (http://localhost/Silverstripe_template/dev/build?flush=&flushtoken=9ed3a7526773c6106a4acd4574fbe6af)
+[28-Jun-2018 16:17:13] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'fortemplate' does not exist on 'ArrayList', or the method is not public. (http://localhost/Silverstripe_template/home/blue-peter/unit-1/)
+[28-Jun-2018 16:40:27] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'fortemplate' does not exist on 'MenuTemplate', or the method is not public. (http://localhost/Silverstripe_template/home/blue-peter/unit-1/)
+[28-Jun-2018 16:44:55] Error at \framework\view\SSTemplateParser.php line 4028: Uncaught SSTemplateParseException: Parse error in template on line 3. Error was: Malformed opening block tag loop. Perhaps you have tried to use operators? (http://localhost/Silverstripe_template/home/blue-peter/)
+[28-Jun-2018 17:13:49] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'blockholders' does not exist on 'PresentationHolder', or the method is not public. (http://localhost/Silverstripe_template/home/blue-peter/presentation-holder/)
+[02-Jul-2018 17:09:15] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'contentblock' does not exist on 'Reference', or the method is not public. (http://localhost/Silverstripe_template/admin/reference/Reference/EditForm/field/Reference/item/new/ItemEditForm?Locale=en_GB)
+[03-Jul-2018 02:00:59] Error at \framework\view\SSTemplateParser.php line 3872: Uncaught SSTemplateParseException: Parse error in template on line 18. Error was: Unknown open block "Include" encountered. Perhaps you missed  the closing tag or have mis-spelled it? (http://localhost/Silverstripe_template/home/blue-peter/unit-1/page-3/)
+[09-Jul-2018 18:04:34] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT DISTINCT "SiteTree_Live"."ClassName", "SiteTree_Live"."LastEdited", "SiteTree_Live"."Created", "Page_Live"."Caption", "Page_Live"."RemoveFromMenu", "Page_Live"."Icon", "Page_Live"."ColorScheme", "Page_Live"."Unit", "Page_Live"."MenuImageID", "Page_Live"."MenuTemplateID", "SiteTree_Live"."ID", 
+			CASE WHEN "SiteTree_Live"."ClassName" IS NOT NULL THEN "SiteTree_Live"."ClassName"
+			ELSE 'SiteTree' END AS "RecordClassName", "SiteTree_Live"."Sort"
+
+FROM "SiteTree_Live"
+LEFT JOIN "Page_Live" ON "Page_Live"."ID" = "SiteTree_Live"."ID"
+
+WHERE ("Page_Live"."ID" = 18)
+ AND ("SiteTree_Live"."ClassName" IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?))
+
+ORDER BY "SiteTree_Live"."Sort" ASC
+
+LIMIT 1
+
+Unknown column 'Page_Live.RemoveFromMenu' in 'field list' (http://localhost/Silverstripe_template/home/blocks/)
+[09-Jul-2018 18:28:10] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class SectionLogolock does not exist (http://localhost/Silverstripe_template/admin/pages/edit/show/49?Locale=en_GB)
+[09-Jul-2018 18:28:13] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class SectionLogolock does not exist (http://localhost/Silverstripe_template/admin/pages/edit/show/49?Locale=en_GB)
+[09-Jul-2018 18:41:49] Error at \framework\control\injector\InjectionCreator.php line 14: Uncaught ReflectionException: Class SectionLogolock does not exist (http://localhost/Silverstripe_template/admin/pages/edit/show/49?Locale=en_GB)
+[09-Jul-2018 18:43:06] Error at \framework\model\DataObject.php line 1737: Uncaught Exception: No has_one found on class 'Image', the has_many relation from 'SectionLogoBlock' to 'Image' requires a has_one on 'Image' (http://localhost/Silverstripe_template/admin/pages/edit/EditForm/49/field/Sections/add-multi-class/SectionLogoBlock/ItemEditForm?Locale=en_GB)
+[15-Jul-2018 12:36:40] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'sessionloginform' does not exist on 'Page_Controller', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/test-1)
+[15-Jul-2018 12:37:05] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'sessionloginform' does not exist on 'Page_Controller', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/test-1)
+[15-Jul-2018 12:37:33] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'sessionloginform' does not exist on 'Page_Controller', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/test-1)
+[15-Jul-2018 12:38:23] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'sessionloginform' does not exist on 'Page_Controller', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/test-1)
+[15-Jul-2018 12:48:30] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'sessionloginform' does not exist on 'Page_Controller', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/test-1/)
+[15-Jul-2018 12:49:27] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'sessionloginform' does not exist on 'Page_Controller', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/test-1/)
+[16-Jul-2018 16:48:18] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't connect to MySQL database | Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ (http://localhost/Silverstripe_template/home/input-tests/test-1/SessionLoginForm)
+[17-Jul-2018 14:13:01] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'removeemptytabs' does not exist on 'SectionInputBlock', or the method is not public. (http://localhost/Silverstripe_template/admin/pages/edit/EditForm/53/field/Sections/item/36/edit?Locale=en_GB)
+[17-Jul-2018 14:44:16] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'write' does not exist on 'DataList', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/writing-frames/TextAreaInputForm)
+[17-Jul-2018 22:29:54] Error at \framework\core\ClassInfo.php line 284: Uncaught ReflectionException: Class SectionBlockExtension does not exist (http://localhost/Silverstripe_template/home/blocks/word-bank/)
+[19-Jul-2018 08:52:21] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't connect to MySQL database | Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ (http://localhost/Silverstripe_template/Security/login?BackURL=%2FSilverstripe_template%2Fadmin%2Fpages)
+[19-Jul-2018 11:02:55] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'setoption' does not exist on 'FrontendHtmlEditorField', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/writing-frames/)
+[19-Jul-2018 11:07:21] Error at \framework\core\Object.php line 780: Uncaught Exception: Object->__call(): the method 'setoption' does not exist on 'FrontendHtmlEditorField', or the method is not public. (http://localhost/Silverstripe_template/home/input-tests/writing-frames/)

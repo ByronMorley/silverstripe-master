@@ -1,0 +1,93 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                NAV.LESS
+-----------------------------------------*/
+
+nav {
+
+    height: @config-header-height;
+
+    ul {
+        overflow: hidden;
+        padding: 0;
+        margin:0;
+    }
+    li {
+        display: block;
+        float:left;
+        list-style: none;
+    }
+    a {
+        background-color: transparent;
+        color: @light-color;
+        display: inline-block;
+        padding: 0px 12px;
+        text-decoration: none;
+
+        &.current {
+            background-color: @alpha-color;
+            color: @light-color;
+        }
+        &:hover {
+            background-color: @beta-color;
+            color: @light-color;
+
+            &.current {
+                background-color: @alpha-color;
+                color: @light-color;
+            }
+        }
+        &:visited {
+
+        }
+    }
+
+    &.left {
+        .nav-root{
+            float:left;
+
+            @media @XS, @XXS {
+                a{
+                    text-align: left;
+                    padding-left:15px !important;
+                }
+            }
+
+        }
+
+        @media @XS, @XXS {
+            .menu-toggle{
+                text-align: left;
+            }
+        }
+
+    }
+    &.right {
+        .nav-root{
+            float:right;
+
+            @media @XS, @XXS {
+                a{
+                    text-align: right;
+                    padding-right:15px !important;
+                }
+            }
+        }
+        @media @XS, @XXS {
+            .menu-toggle{
+                text-align: right;
+            }
+        }
+    }
+
+    @media @XL, @LG, @MD, @SM {
+        li {
+            a {
+                line-height: @config-header-height;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}

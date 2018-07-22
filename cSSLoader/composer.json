@@ -1,0 +1,28 @@
+{
+  "name": "rgb-software/silverstripe-css-loader",
+  "description": "css loading screen",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/your-vendor-name/module-name",
+  "keywords": ["silverstripe", "content", "building"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Byron Morley","email": "byron@rgbsoftware.co.uk"}
+  ],
+  "support": {
+    "issues": "http://github.com/your-vendor-name/module-name/issues"
+  },
+  "config": {
+    "vendor-dir": "../"
+  },
+  "require": {
+    "silverstripe/cms": "~3.1",
+    "silverstripe/framework": "~3.1"
+  },
+  "extra": {
+    "installer-name": "cSSLoader",
+    "screenshots": [
+      "relative/path/screenshot1.png",
+      "http://myhost.com/screenshot2.png"
+    ]
+  }
+}

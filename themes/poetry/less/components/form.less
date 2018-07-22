@@ -1,0 +1,142 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                FORM.LESS
+-----------------------------------------*/
+
+fieldset {
+    .field {
+
+        width: 100%;
+        margin-bottom: 10px;
+        height: 40px;
+
+        input, select {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+            *display: inline; /* for IE7*/
+            zoom: 1; /* for IE7*/
+            vertical-align: middle;
+            margin-left: 20px;
+            width: ~"calc(100% - 160px)";
+            background-color: #fff;
+            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff));
+            background-image: -webkit-linear-gradient(center bottom, #eee 0, #fff 50%);
+            background-image: -moz-linear-gradient(center bottom, #eee 0, #fff 50%);
+            background-image: -o-linear-gradient(bottom, #eee 0, #fff 50%);
+            background-image: -ms-linear-gradient(top, #eee 0, #fff 50%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+            background-image: linear-gradient(top, #eee 0, #fff 50%);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #aaa;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            padding: 0 0 0 8px;
+            color: #444;
+            text-decoration: none;
+            height: 40px;
+            line-height: 40px;
+
+        }
+
+        label {
+            display: inline-block;
+            *display: inline; /* for IE7*/
+            zoom: 1; /* for IE7*/
+            float: left;
+            padding-top: 5px;
+            width: 140px;
+            line-height: 40px;
+
+            &.left {
+                text-align: right;
+            }
+        }
+
+        .middleColumn {
+
+            .select2-container {
+                margin-left: 20px;
+                width: ~"calc(100% - 160px)";
+
+                a {
+                    height: 40px;
+                    span {
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+        }
+
+        &.htmleditor {
+            height:auto;
+        }
+    }
+}
+
+.modal {
+    .action {
+        margin-left:160px;
+    }
+}
+
+#Form_ContractForm {
+    overflow: hidden;
+
+}
+
+#Attachments {
+    height:auto;
+    label {
+        width:100%;
+        display:none;
+    }
+
+}
+#Form_JobForm {
+    .action {
+        margin-left:0px;
+    }
+}
+textarea {
+    border:1px solid @light-grey;
+}
+
+.message {
+    &.required {
+        display:none;
+    }
+}
+
+#Form_FlagForm,#Form_NoteForm, #Form_LastFlagForm {
+    label {
+        width:100%;
+        text-align:left;
+        display:none;
+    }
+    select {
+        width:100%;
+        margin:0 0 10px 0;
+
+    }
+    textarea {
+        width:100% !important;
+        height:200px !important;
+        resize: none;
+        padding:5px;
+    }
+    .Actions {
+        input {
+            margin-left:0;
+        }
+     }
+}

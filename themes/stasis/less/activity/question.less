@@ -1,0 +1,107 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+             QUESTION.LESS
+-----------------------------------------*/
+
+.aq-activity-main {
+
+    .aq-activities {
+        & > li {
+
+            display: none;
+            &:first-child{
+                display:block;
+            }
+            &.current {
+                display: block;
+            }
+        }
+    }
+
+    .aq-upper-section {
+
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight:700;
+
+        .aq-intro {
+            color: @dark-color;
+            font-size: 30px;
+            line-height: 34px;
+
+        }
+        .aq-score {
+
+            color: @alpha-color;
+        }
+    }
+    .aq-activity {
+
+        &.content {
+
+            font-size: 20px;
+            line-height: 26px;
+            font-weight:700;
+
+
+            .aq-question {
+                p {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 600;
+
+                }
+            }
+            .aq-rule {
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+            .aq-explanation {
+                display: none;
+                margin: 10px 0;
+
+                p {
+                    font-weight:700;
+                    color:@alpha-color;
+                }
+            }
+            .aq-answers {
+
+                padding-left: 10px;
+
+                & > ul {
+                    & > li {
+                        transition: ease all 0.5s;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .aq-answer-text {
+                    p{
+                        font-weight: 600;
+                        line-height: 32px;
+                    }
+
+                }
+            }
+        }
+        #aq-confirm {
+            margin: 0;
+        }
+    }
+
+    button {
+        margin: 0;
+        font-weight:700;
+        font-size:20px;
+    }
+
+}
+
+
+.aq-question-activity  {
+
+}

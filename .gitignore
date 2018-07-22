@@ -1,0 +1,16 @@
+# ignore cache folder
+/silverstripe-cache/
+
+# ignore all environment files
+_ss_environment.php
+
+# ignore all node files
+node_modules/
+
+# ignore all assets, need to upload seperately
+/assets/
+
+# ignore build tools
+/tools/phing-metadata
+
+/.idea/

@@ -1,0 +1,21 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                HEADER.LESS
+-----------------------------------------*/
+
+@header-color:@config-header-color;
+@header-height:@config-header-height;
+@content-height:@header-height - 10;
+
+header {
+    background-color:@header-color;
+    height:@header-height;
+    margin-bottom:10px;
+    border-bottom:10px solid #C3C3C3;
+
+    @media @XS, @XXS {
+        height:auto;
+    }
+}
+

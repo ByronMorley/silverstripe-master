@@ -1,0 +1,25 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            COLUMN.LESS
+-----------------------------------------*/
+
+ul.columns {
+
+  overflow: hidden;
+  width: 100%;
+  margin:0;
+
+  &.col-2 {
+
+    &>li {
+      float:left;
+      width: ~"calc(50% - 5px)";
+      margin:0 0 0 10px;
+
+      &:first-child {
+        margin-left:0;
+      }
+    }
+  }
+}

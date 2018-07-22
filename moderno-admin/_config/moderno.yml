@@ -1,0 +1,45 @@
+LeftAndMain:
+  extra_requirements_javascript:
+    - moderno-admin/javascript/moderno.js
+  extra_requirements_css:
+    - moderno-admin/css/cms/cms.css
+    - moderno-admin/css/moderno.min.css
+    - moderno-admin/css/moderno-editor.min.css
+    - moderno-admin/css/font-awesome.min.css
+  extensions:
+    - AwesomeIconExtension
+    - ModernoAdminExtension
+    - CMSMainEditFormExtension
+
+SiteConfig:
+  extensions:
+    - ModernoConfigExtension
+
+ModernoConfigExtension:
+  resize_methods:
+    CropWidth: Crop Width
+    CropHeight: Crop Height
+    Fill: Fill
+    FillMax: Fill Max
+    Fit: Fit
+    FitMax: Fit Max
+    Pad: Pad
+    ScaleWidth: Scale Width
+    ScaleHeight: Scale Height
+    ScaleMaxWidth: Scale Max Width
+    ScaleMaxHeight: Scale Max Height
+
+CMSPagesController:
+  awesome_icon: sitemap
+
+AssetAdmin:
+  awesome_icon: picture-o
+
+ReportAdmin:
+  awesome_icon: bar-chart
+
+SecurityAdmin:
+  awesome_icon: user
+
+CMSSettingsController:
+  awesome_icon: cog

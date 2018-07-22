@@ -1,0 +1,7 @@
+---
+Name: cSSLoader
+After: 'framework/*','cms/*'
+---
+Page:
+  extensions:
+    - Css_loader

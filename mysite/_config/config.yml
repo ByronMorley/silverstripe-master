@@ -1,0 +1,45 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'stasis'
+  rewrite_hash_links: false
+
+
+SiteTree:
+  extensions:
+    - Translatable
+    -
+SiteConfig:
+  extensions:
+    - Translatable
+
+Director:
+  environment_type: 'dev'
+
+LeftAndMain:
+  extra_requirements_css:
+    - mysite/css/admin.css
+
+---
+After: 'silverstripe-mailgun'
+---
+Kinglozzer\SilverStripeMailgunner\Mailer:
+  api_domain: 'sandboxda8f9dbd3e9b4151b537ac5652de433b.mailgun.org'
+  api_key: 'key-e8949538cb3015fbcce6a1c9e7149aa9'
+---
+After: 'silverstripe-mailgun'
+Only:
+  environment: 'dev'
+---
+# Get your own Postbin ID by visiting http://bin.mailgun.net
+Kinglozzer\SilverStripeMailgunner\Mailer:
+  api_endpoint: 'http://bin.mailgun.net/a3559eed'
+  debug: true
+

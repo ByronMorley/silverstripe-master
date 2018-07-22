@@ -1,0 +1,127 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+         CUSTOM SIDE NAV.LESS
+-----------------------------------------*/
+
+@tab-width: 90px;
+@aside-width: 90px;
+
+#custom-side-nav {
+
+  position: fixed;
+  overflow: hidden;
+  z-index: 100;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+
+  .menu {
+
+    float: left;
+
+    &.menu-tabs {
+      width: @tab-width;
+      background-color: @dark-grey;
+      height: 100%;
+
+      ul {
+        margin-top: 120px;
+        overflow: hidden;
+        li {
+          overflow: hidden;
+          height: 60px;
+          width: 60px;
+
+
+          &.current {
+            i {
+              color: @alpha-color;
+              opacity: 1;
+              background-color: rgba(110, 52, 139, 0.3);
+              -webkit-box-shadow: inset 5px 0px 0px 0px rgba(110, 52, 139, 1);
+              -moz-box-shadow: inset 5px 0px 0px 0px rgba(110, 52, 139, 1);
+              box-shadow: inset 5px 0px 0px 0px rgba(110, 52, 139, 1);
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+
+          i {
+            display: block;
+            line-height: 60px;
+            color: @light-color;
+            font-size: 36px;
+            opacity: 0.2;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.7;
+            }
+
+          }
+        }
+      }
+    }
+    &.menu-extension {
+      width: @aside-width - @tab-width;
+      background-color: @alpha-color;
+      height: 100%;
+      -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+      transition: width 0.5s;
+
+      @media @SM, @XS, @XXS {
+        //display:none;
+      }
+
+      &.open {
+        width: @aside-width - @tab-width;
+      }
+      &.closed {
+        width:0px;
+      }
+
+
+      .title {
+        margin-top: 60px;
+        height: 60px;
+        width: 240px;
+        padding: 15px;
+        font-size: 24px;
+        font-family: @font-condensed;
+        color: @light-color;
+      }
+    }
+  }
+}
+
+#extension-toggle {
+
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 60px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  color: @light-color;
+  padding: 0 0 0 15px;
+  font-size: 24px;
+  cursor: pointer;
+
+  &.closed {
+    color: @alpha-color;
+  }
+  @media @SM, @XS, @XXS {
+    left: 0;
+
+    &.closed {
+      color: @light-color;
+    }
+
+  }
+}

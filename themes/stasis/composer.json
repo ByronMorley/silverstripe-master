@@ -1,0 +1,25 @@
+{
+  "name": "rgb-software/silverstripe-statis-theme",
+  "description": "theme",
+  "type": "silverstripe-theme",
+  "homepage": "http://github.com/your-vendor-name/module-name",
+  "keywords": ["silverstripe", "content", "building"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Byron Morley","email": "byron@rgbsoftware.co.uk"}
+  ],
+  "support": {
+    "issues": "http://github.com/your-vendor-name/module-name/issues"
+  },
+  "config": {
+    "vendor-dir": "../../"
+  },
+  "require": {
+    "twitter/bootstrap":"~4.1",
+    "components/jquery":"~3.3.1",
+    "components/font-awesome":"4.7.0",
+    "components/jqueryui":"^1.11.0",
+    "rgb-software/silverstripe-building-blocks": "^1.0",
+    "rgb-software/silverstripe-booteek":"^1.0"
+  }
+}
